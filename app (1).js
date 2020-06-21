@@ -1,90 +1,147 @@
-// 1. Declare and initialize an empty multidimensional array. (Array of arrays)
-var arr = new Array(3);
-for (var i = 0; i < arr.length; ++i) {
-  arr[i] = new Array(3);
-}
+//Chapter 21-25 strings
 
-console.log(arr);
+// task#1
+// var fname =prompt("Enter your first name")
+//var lname =prompt("Enter your last name")
 
-
-// 2. Declare and initialize a multidimensional array representing the  matrix:
-
-var num1 =[0,1,2,3];
-var num2 =[1,0,1,2];
-var num3 =[2,1,0,1];
-
-var num = [num1,num2,num3];
-console.log(num);
-
-// 3. Write a program to print numeric counting from 1 to 10.
-var x;
-for (x = 1;x <= 10; x++){
-  console.log(x)
-}
+// var fullname = fname + " " + lname ;
 
 
-// 4.  Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user.
- var number=prompt("Enter a number to show its multipliclation table","Your number")
- var number1=prompt("Enter length of multiplication table")
- for (var i = 1; i <=number1; i++){
-  console.log("number" + "x" + i + "=" + number*i + " ")
-}
+// alert("Hello" + " " +fullname);
 
 
-// 5. Write a program to print items of the following array using for loop: fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+// task#2
+// var favphone =prompt("What is your favourite mobile model")
+// var len = favphone.length;
+// document.write("Length of string :" + " " + len);
 
-var fruits=["apple","banana","mango","orange","strawberry"];
-for (var i = 0; i <= 0; i++){
-  console.log(fruits)
-}
+// task#3
+// var str="Pakistani";
+// var ind = str.indexOf("n");
+// document.write("String: " + str + "<br>")
+// document.write("Index of 'n' : "+ ind);
 
-// 6th task
-// counting
-for (var i = 1; i <=15; i++) {
-console.log(i)
-}
+// task#4
+// var str="Hello World";
+// var ind = str.lastIndexOf("l");
+// document.write("String: " + str + "<br>");
+// document.write("Index of 'l' : "+ ind);
 
-// reverse counting
+// task#5
+// var str = "Pakistani";
+// var char = str.charAt(3);
+// document.write("String : "+ str + "<br>");
+// document.write("Character at index 3 : " + char);
 
-for (var i = 10; i >= 1; i--) {
- console.log(i)
-}
+// task#6
+// var fname =prompt("Enter your first name");
+// var lname =prompt("Enter your last name");
+// var fullname = fname.concat(lname);
+// alert("Hello " + fullname);
 
-// even counting
-for (var i = 0; i <=20; i=i+2) {
-  console.log(i)
-}
+// task#7
+// var word = "Hyderabad";
+// var newword ="Islam";
+// var res = word.replace("Hyder","Islam");
+// document.write("City : " + word + "<br>");
+// document.write("After replacement : " + res );
 
-// odd counting
-for (var i = 1; i < 20; i=i+2) {
-  console.log(i)
-}
+// task#8
+// var sent ="Ali and Sami are best friends.";
+// var sent1 ="They play cricket and football together."
+// var res = sent.replace("and","&");
+// var res1 = sent1.replace("and","&");
+// document.write(sent + sent1 + "<br>");
+// document.write(res + res1);
 
+// task#9
+// var value ="472";
+// document.write("Value : " + value +"<br>");
+//  var type = typeof value;
+//  document.write("Type : " + type + "<br>");
+//  var value1=Number(value);
+//  document.write("Value : " + value1 + "<br>");
+//  var type1 = typeof value1;
+//  document.write("Type : " + type1);
 
-// var items=["cake","apple pie","cookie","chips","patties"];
-// var useritem =prompt("Enter your item")
+// task#10
+// var input="peanuts";
+// var convert =input.toUpperCase();
+// document.write("User input : " + input +"<br>");
+// document.write("Upper Case : "+ convert );
 
-// var largestNumber = [24,53,78,91,12];
-// for(var arrayIndex = 0; arrayIndex < arr.length; arrayIndex++) {
-//   if(arr[arrayIndex] > largestNumber[arrayIndex]) {
+// task#11
+// function titleCase(string) {
+//      var sentence = string.toLowerCase().split(" ");
+//      for(var i = 0; i< sentence.length; i++){
+//         sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+//      }
+//   document.write(sentence.join(" "));
+//   return sentence;
+//   }
+//   titleCase("javascript");
+
+// task#12
+// var num = 35.36;
+// var str = num.toLocaleString("fi-FI");
+// document.write("Number : " + num + "<br>");
+// document.write("Result : " + str);
+
+// task#13
+// var input = prompt("Enter the username");
+// if (input == 33 || input == 44 || input == 64 || input == 46 ) {
+//   alert("Enter a valid username");
+// }
+//   else {
+//     alert("okay");
+//   }
+
+// task#14
+// var bakery =prompt("Welcome to ABC Bakery,what do yo want to order?");
+// bakery= bakery.toLowerCase();
+// var items = ["cake","applepie","cookies","chips","patties"];
 //
-//          largestNumber[arrayIndex] = arr[arrayIndex];
-//          return largestNumber
+// for (var i = 0; i < items.length; i++) {
+//  if(items[i] === bakery) {
+//         alert(bakery + "is available in our bakery" );
+//         break;
+//
+//   }
+//   else {
+//      alert(bakery + " is not available in our bakery");
+//      break;
+//    }
+//   }
+
+// task#15
+// var pass = prompt("Enter password");
+// for (var i = 0; i < pass.length; i++) {
+//   if (pass ===" " || pass === 123 || pass.length<6) {
+//     alert("Invalid password");
+//     break;
+//   }
+//     else {
+//       alert("we are good");
+//       break;
+//     }
+//
+//
 // }
 
+// task#16
+// const string = 'UniversityofKarachi';
+// const usingSplit = string.split('');
+// document.write(usingSplit);
 
-// 10
-var sum = 0;
-function multiplesOf5(number) {
+// task#17
+// var input =prompt("");
+// var lchar =input.charAt(input.length-1 );
+// document.write("User input : " + input + "<br>");
+// document.write("Last character of input : " + lchar);
 
-
-  for(var i = 1; i < number; i++){
-    // if((i % 3 === 0 )
-    (i % 5 === 0)
-      sum = sum + i;
-
-  }
-  return sum;
-}
-
-multiplesOf5(100);
+// task#18
+// var stringsearch = "the"
+//        str = "The quick brown fox jumps over the lazy dog";
+//        str = str.toLowerCase();
+//     for(var count=-1,index=-2; index != -1; count++,index=str.indexOf(stringsearch,index+1) );
+//     document.write(count);
